@@ -105,6 +105,7 @@
 	line-height: vc(48);
 	color: $color-white;
 	background: $color-theme;
+	transition: all 0.5s linear;
 
 	&--lg {
 		@include desktop {

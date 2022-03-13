@@ -13,6 +13,7 @@
 		width: 100%;
 		margin: 0 auto;
 		position: relative;
+		animation: scrolling 14s linear infinite;
 
 		&--1 {
 			margin-bottom: vc(24);
@@ -23,9 +24,7 @@
 		}
 
 		&--2 {
-			.marquee__item {
-				animation-direction: reverse;
-			}
+			animation-direction: reverse;
 
 			@include mobile {
 				margin-bottom: vc(16);
@@ -44,7 +43,7 @@
 		font-size: vc(36);
 		letter-spacing: -1px;
 		background: $color-surface4;
-		//animation: marquee 12s linear infinite;
+
 
 		&--1 {
 			border-color: $color-surface7;
@@ -97,12 +96,7 @@
 	}
 }
 
-@keyframes marquee {
-	0% {
-		transform: translate(0, 0);
-	}
-
-	100% {
-		transform: translate(-100%, 0);
-	}
+@keyframes scrolling {
+	0% { transform: translateX(0); }
+	100% { transform: translatex(-144vw); }
 }

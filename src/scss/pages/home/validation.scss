@@ -20,6 +20,11 @@
 		}
 	}
 
+	div {
+		position: relative;
+		z-index: 1;
+	}
+
 	&__title {
 		position: relative;
 		z-index: 1;
