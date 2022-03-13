@@ -1,0 +1,11 @@
+.image {
+	margin: vc(181) auto vc(171);
+	width: vc(872);
+	height: vc(232);
+
+	@include mobile {
+		margin: vc(57) auto vc(51);
+		width: vc(275);
+		height: vc(147);
+	}
+}

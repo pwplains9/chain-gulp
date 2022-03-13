@@ -1,0 +1,108 @@
+.marquee {
+	user-select: none;
+	position: relative;
+	overflow: hidden;
+	margin-top: vc(74);
+	margin-bottom: vc(72);
+
+	&__inner {
+
+		display: flex;
+		align-items: center;
+		white-space: nowrap;
+		width: 100%;
+		margin: 0 auto;
+		position: relative;
+
+		&--1 {
+			margin-bottom: vc(24);
+
+			@include mobile {
+				margin-bottom: vc(16);
+			}
+		}
+
+		&--2 {
+			.marquee__item {
+				animation-direction: reverse;
+			}
+
+			@include mobile {
+				margin-bottom: vc(16);
+			}
+		}
+	}
+
+	&__item {
+		flex-shrink: 0;
+		margin-right: vc(24);
+		border: 2px solid;
+		border-radius: 12px;
+		padding: vc(19) vc(52) vc(26) vc(23);
+		height: vc(120);
+		font-family: $font-Poppins;
+		font-size: vc(36);
+		letter-spacing: -1px;
+		background: $color-surface4;
+		//animation: marquee 12s linear infinite;
+
+		&--1 {
+			border-color: $color-surface7;
+			color: $color-surface7;
+
+			@include mobile {
+				br {
+					display: none;
+				}
+			}
+		}
+
+		&--2 {
+			border-color: $color-surface2;
+			color: $color-surface2;
+		}
+
+		&--3 {
+			border-color: $color-surface;
+			color: $color-surface;
+		}
+
+		&--4 {
+			border-color: $color-surface3;
+			color: $color-surface3;
+		}
+
+		&--5 {
+			border-color: $color-surface6;
+			color: $color-surface6;
+		}
+
+		&--6 {
+			border-color: $color-surface5;
+			color: $color-surface5;
+		}
+
+		@include mobile {
+			margin-right: vc(16);
+			padding: vc(6) vc(18) vc(8) vc(8);
+			height: vc(54);
+			font-size: vc(16);
+			letter-spacing: 0;
+		}
+	}
+
+	@include mobile {
+		margin-top: vc(32);
+		margin-bottom: vc(16);
+	}
+}
+
+@keyframes marquee {
+	0% {
+		transform: translate(0, 0);
+	}
+
+	100% {
+		transform: translate(-100%, 0);
+	}
+}

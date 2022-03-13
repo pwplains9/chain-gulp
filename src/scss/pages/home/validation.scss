@@ -1,0 +1,62 @@
+.validation {
+	position: relative;
+	padding-top: vc(77);
+	padding-bottom: vc(120);
+
+	&::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: 0 auto;
+		width: 100%;
+		height: vc(440);
+		background: url("../images/png@2x/noise@2x.png") center center no-repeat;
+		background-size: contain;
+
+		@include mobile {
+			left: -138%;
+		}
+	}
+
+	&__title {
+		position: relative;
+		z-index: 1;
+
+		@include desktop {
+			text-align: center;
+		}
+	}
+
+	&__description {
+		position: relative;
+		z-index: 1;
+		margin: vc(42) 0 vc(32);
+
+		@include desktop {
+			text-align: center;
+		}
+
+		@include mobile {
+			margin: vc(21) 0 vc(16);
+		}
+	}
+
+	&__link {
+		position: relative;
+		z-index: 1;
+		margin: 0 auto;
+	}
+
+	@include desktop {
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	@include mobile {
+		padding: vc(35) vc(32) vc(32);
+	}
+}

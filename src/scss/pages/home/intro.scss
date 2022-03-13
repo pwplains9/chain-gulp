@@ -1,0 +1,98 @@
+.intro {
+	position: relative;
+	height: vc(972);
+
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		right: 0;
+		top: 0;
+		margin: 0 auto;
+		width: vc(1276);
+		height: vc(972);
+		transition: all 0.5s linear;
+
+		@include mobile {
+			top: auto;
+			bottom: 0;
+			width: 100%;
+			height: vc(470);
+		}
+	}
+
+	&::before {
+		@include desktop {
+			background: $color-white url("../images/jpg@2x/backgorund_image_light@2x.jpg") center center no-repeat;
+			background-size: contain;
+		}
+
+		@include mobile {
+			background: $color-white url("../images/jpg@2x/background-image_l@2x.jpg") center center no-repeat;
+			background-size: contain;
+		}
+	}
+
+	&::after {
+		opacity: 0;
+
+		@include desktop {
+			background: $color-bg url("../images/jpg@2x/backgorund_image_dark@2x.jpg") center center no-repeat;
+			background-size: contain;
+		}
+
+		@include mobile {
+			background: $color-intro-m url("../images/jpg@2x/background-image_d@2x.jpg") center center no-repeat;
+			background-size: contain;
+		}
+	}
+
+	&__container {
+		position: relative;
+		z-index: 2;
+	}
+
+	&__title {
+		padding: vc(304) 0 vc(75);
+
+		@include mobile {
+			padding-top: vc(92);
+			padding-bottom: vc(30);
+		}
+	}
+
+	&__description {
+		margin-bottom: vc(55);
+
+		@include mobile {
+			margin-bottom: vc(24);
+		}
+	}
+
+	&__buttons {
+		@include desktop {
+			display: flex;
+		}
+	}
+
+	&__button {
+		&--1 {
+			margin-right: vc(32);
+			background: $color-theme;
+
+			@include mobile {
+				margin-bottom: vc(16);
+			}
+		}
+
+		&--2 {
+			color: $color-theme;
+			box-shadow: 0 8px 8px -4px rgba(69, 121, 245, 0.06), 0 2px 4px -1px rgba(27, 10, 82, 0.06), 0 0 1px 0 rgba(69, 121, 245, 0.12);
+			background: $color-white;
+		}
+	}
+
+	@include mobile {
+		height: vc(737);
+	}
+}

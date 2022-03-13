@@ -1,0 +1,254 @@
+.info {
+	padding-top: vc(115);
+
+	&__block {
+		border-radius: 12px;
+		padding: vc(94) vc(88) vc(88);
+		box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px 0 rgba(20, 16, 41, 0.12);
+		background: $color-white;
+
+		&-description {
+			margin: vc(49) 0 vc(41);
+
+			@include mobile {
+				margin: vc(21) 0 vc(16);
+			}
+		}
+
+		@include desktop {
+			position: absolute;
+			right: 0;
+			top: vc(-186);
+			z-index: 1;
+			width: vc(648);
+		}
+
+		@include mobile {
+			position: relative;
+			z-index: 1;
+			padding: vc(34) vc(32);
+			box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px 0 rgba(20, 16, 41, 0.12);
+		}
+	}
+
+	&__video {
+		width: vc(984);
+
+		.video-js {
+			border-radius: 12px;
+			overflow: hidden;
+		}
+
+		&-blocks {
+			display: flex;
+			justify-content: space-between;
+			margin-top: vc(24);
+
+			@include mobile {
+				margin-top: vc(32);
+				padding: 0 vc(32);
+				flex-wrap: wrap;
+			}
+		}
+
+		&-block {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 12px;
+			width: vc(312);
+			height: vc(72);
+			font-family: $font-Montserrat;
+			font-weight: 600;
+			font-size: vc(18);
+			line-height: vc(18);
+			letter-spacing: -0.4px;
+
+			span {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-right: vc(12);
+				border-radius: 50%;
+				width: vc(48);
+				height: vc(48);
+
+				svg {
+					width: vc(24);
+					height: vc(24);
+				}
+			}
+
+			&--1 {
+				background-color: rgba(122, 182, 204, 0.24);
+				color: $color-surface;
+
+				span {
+					background: $color-surface;
+				}
+			}
+
+			&--2 {
+				background-color: rgba(122, 147, 204, 0.24);
+
+				color: $color-surface2;
+
+				span {
+					background: $color-surface2;
+				}
+			}
+
+			&--3 {
+				background-color: rgba(144, 122, 204, 0.24);
+
+				color: $color-surface3;
+
+				span {
+					background: $color-surface3;
+				}
+			}
+
+			@include mobile {
+				width: vc(140);
+				height: vc(72);
+
+				&--1 {
+					span {
+						position: relative;
+						left: vc(-18);
+						margin-right: vc(-7);
+					}
+				}
+
+				&--3 {
+					margin-top: vc(16);
+					width: vc(296);
+					height: vc(72);
+				}
+			}
+		}
+
+		@include mobile {
+			margin-top: vc(-33);
+			width: 100%;
+		}
+	}
+
+	&__intro {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		border-radius: 12px;
+		padding: vc(94) vc(87) vc(209);
+		background: url("../images/jpg@2x/globo_video@2x.jpg") center center no-repeat;
+		background-size: contain;
+		transition: all 0.5s linear;
+
+		&-logo {
+			color: $color-white;
+
+			.line {
+				position: relative;
+				margin-left: vc(10);
+
+				&::after {
+					content: "";
+					position: absolute;
+					left: vc(2);
+					top: vc(3);
+					width: vc(133);
+					height: vc(48);
+					background: $color-white;
+
+					@include mobile {
+						top: vc(-2);
+						width: vc(67);
+						height: vc(32);
+					}
+				}
+
+				@include mobile {
+					margin-left: vc(3);
+				}
+			}
+
+			.texts {
+				position: relative;
+				z-index: 1;
+				font-style: italic;
+				color: $color-surface2;
+			}
+		}
+
+		&-text {
+			margin-top: vc(42);
+			width: vc(290);
+			color: $color-white;
+
+			@include mobile {
+				margin-top: vc(21);
+				width: 100%;
+			}
+		}
+
+		&-play {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: vc(72);
+			height: vc(72);
+			border-radius: 4px;
+			-webkit-backdrop-filter: blur(40px);
+			backdrop-filter: blur(40px);
+			box-shadow: 8px 8px 24px 0 rgba(9, 13, 20, 0.4), -4px -4px 8px 0 rgba(224, 224, 255, 0.04), 0 1px 1px 0 rgba(9, 13, 20, 0.4);
+			border: solid 1px rgba(245, 247, 250, 0.06);
+			background-image: linear-gradient(135deg, rgba(245, 247, 250, 0.12), rgba(245, 247, 250, 0.06) 52%, rgba(245, 247, 250, 0) 100%);
+
+			svg {
+				width: vc(32);
+				height: vc(32);
+			}
+
+			@include desktop {
+				cursor: pointer;
+				transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+				&:hover {
+					transform: translate(-50%, -50%) scale(1.3);
+				}
+			}
+		}
+
+		&.video-play {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		@include mobile {
+			padding: vc(66) vc(32) vc(32);
+			background: url("../images/jpg@2x/image@2x.jpg") center center no-repeat;
+			background-size: cover;
+		}
+	}
+
+	&__container {
+		position: relative;
+		width: vc(984);
+		height: vc(490);
+
+		@include mobile {
+			width: 100%;
+			height: vc(631);
+		}
+	}
+
+	@include mobile {
+		padding-top: 0;
+	}
+}

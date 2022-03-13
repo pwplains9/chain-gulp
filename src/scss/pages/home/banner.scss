@@ -1,0 +1,69 @@
+.banner {
+	position: relative;
+	border-radius: vc(12);
+	width: vc(1320);
+	height: vc(640);
+	background: url("../images/jpg@2x/noises_5@2x.jpg") center center no-repeat;
+	background-size: contain;
+
+	&__title {
+		padding: vc(95) vc(87);
+
+		@include mobile {
+			padding: vc(35) vc(32) vc(22);
+		}
+	}
+
+	&__text {
+		@include desktop {
+			position: absolute;
+			right: 0;
+			top: 0;
+			margin: vc(90) vc(89);
+			width: vc(311);
+		}
+
+		@include mobile {
+			padding: 0 vc(32);
+		}
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: vc(87) vc(89);
+		padding: 0;
+		width: vc(252);
+
+		svg {
+			position: relative;
+			left: vc(13);
+			width: vc(24);
+			height: vc(24);
+			color: $color-theme;
+
+			@include mobile {
+				left: vc(9);
+			}
+		}
+
+		@include desktop {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+		}
+
+		@include mobile {
+			margin: vc(15) vc(32);
+			width: vc(210);
+		}
+	}
+
+	@include mobile {
+		width: vc(360);
+		height: vc(720);
+		background-size: cover;
+		background-position: vc(-195);
+	}
+}

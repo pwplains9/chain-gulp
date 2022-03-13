@@ -1,0 +1,110 @@
+.is-white {
+	body {
+		background: $color-bg;
+	}
+
+	.header__switch {
+		border-color: $color-gray;
+		background: $color-gray;
+
+		svg {
+			&:nth-child(1) {
+				opacity: 0;
+			}
+
+			&:nth-child(2) {
+				opacity: 1;
+			}
+		}
+	}
+
+	.header__logo,
+	.footer__logo {
+		color: $color-white;
+
+		svg {
+			color: $color-white;
+		}
+	}
+
+	.intro {
+		&::before {
+			opacity: 0;
+		}
+
+		&::after {
+			opacity: 1;
+		}
+	}
+
+	.header__link,
+	.title,
+	.text,
+	.chart__subtitle,
+	.chart__subtext,
+	.roadmap__text,
+	.footer__social {
+		color: $color-white;
+	}
+
+	.info__block,
+	.cards__item,
+	.banner__link {
+		background: $color-block;
+	}
+
+	.section--7 {
+		background: $color-bg;
+	}
+
+	.banner__link {
+		color: $color-white;
+
+		svg {
+			color: $color-white;
+		}
+	}
+
+	.intro__button--2 {
+		background: $color-block;
+		box-shadow: 0 8px 8px -4px rgba(69, 121, 245, 0.06), 0 2px 4px -1px rgba(27, 10, 82, 0.06), 0 0 1px 0 rgba(69, 121, 245, 0.12), inset 0 1px 3px 0 rgba(69, 121, 245, 0.4);
+	}
+
+	.section__container--banner, .section__container--charts,
+	.advantage__item--1 {
+		border-bottom-color: $color-white;
+	}
+
+	.marquee__item {
+		background: $color-marquee;
+	}
+
+	.roadmap__item {
+		background: $color-block;
+	}
+
+	.roadmap__path {
+		color: rgb(224, 224, 255);
+	}
+
+	.footer {
+		background: $color-footer-m;
+	}
+
+	@include  mobile {
+		.advantage__item--1 {
+			border-bottom-color: $color-bg;
+		}
+
+		.intro,
+		.header,
+		.header__right {
+			background: $color-intro-m;
+		}
+
+		.header__burger,
+		.header__social {
+			color: $color-white;
+		}
+	}
+}

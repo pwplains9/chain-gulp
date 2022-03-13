@@ -1,0 +1,124 @@
+.chart {
+	display: flex;
+	justify-content: space-between;
+
+	&__left {
+		padding-top: vc(130);
+		width: vc(312);
+
+		@include mobile {
+			padding-top: vc(35);
+			width: 100%;
+		}
+	}
+
+	&__center {
+		overflow: hidden;
+		margin-top: vc(72);
+		border-radius: 50%;
+		width: vc(424);
+		height: vc(424);
+
+		@include mobile {
+			margin-top: vc(32);
+			width: vc(296);
+			height: vc(296);
+		}
+	}
+
+	&__right {
+		display: flex;
+		padding-top: vc(188);
+		width: vc(313);
+
+		@include mobile {
+			padding-top: vc(32);
+			width: 100%;
+		}
+	}
+
+	&__title {
+
+	}
+
+	&__description {
+		margin: vc(42) 0 vc(32);
+
+		@include mobile {
+			margin: vc(21) 0 vc(16);
+		}
+	}
+
+	&__link {
+
+	}
+
+	&__col {
+		&--1 {
+			margin-right: vc(17);
+
+			@include mobile {
+				margin-right: vc(20);
+			}
+		}
+	}
+
+	&__item {
+		display: flex;
+		margin-bottom: vc(24);
+	}
+
+	&__square {
+		margin-right: vc(12);
+		border-radius: 4px;
+		width: vc(48);
+		height: vc(48);
+
+		&--1 {
+
+		}
+
+		&--2 {
+			background: $color-surface3;
+		}
+
+		&--3 {
+			background: $color-surface9;
+		}
+
+		&--4 {
+			background: $color-surface8;
+		}
+
+		&--5 {
+			background: $color-surface;
+		}
+
+		&--6 {
+			background: $color-surface10;
+		}
+	}
+
+	&__subtitle {
+		padding: vc(6) 0 vc(5);
+		font-family: $font-Montserrat;
+		font-weight: 500;
+		font-size: vc(13);
+		line-height: vc(13);
+		color: $color-gray;
+	}
+
+	&__subtext {
+		font-family: $font-Poppins;
+		font-weight: 700;
+		font-size: vc(16);
+		line-height: vc(16);
+		letter-spacing: -0.4px;
+		color: $color-gray;
+	}
+
+	@include mobile {
+		flex-flow: column;
+		width: 100%;
+	}
+}

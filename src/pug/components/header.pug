@@ -1,0 +1,39 @@
+header.header(data-aos="fade-down" data-aos-delay="100")
+	.header__left
+		a.header__logo(href="/")
+			include ../../images/sprites/svg/globochain_logo_dark_l.svg
+		ul.header__nav.for-desktop
+			li
+				a.header__link.js-to-anchor(href="#")
+					| Whitepaper
+			li
+				a.header__link.js-to-anchor(href="#")
+					| Presentation
+			li
+				a.header__link.js-to-anchor(href="#")
+					| Roadmap
+	.header__right
+		ul.header__nav.for-mobile
+			li
+				a.header__link.js-to-anchor(href="#")
+					| Whitepaper
+			li
+				a.header__link.js-to-anchor(href="#")
+					| Presentation
+			li
+				a.header__link.js-to-anchor(href="#")
+					| Roadmap
+		.header__switch
+			+svg('moon')
+			+svg('moon_f')
+		.header__socials
+			a.header__social(href="" target="_blank")
+				+svg('git_hub_white')
+			a.header__social(href="" target="_blank")
+				+svg('twitter_white')
+			a.header__social(href="" target="_blank")
+				+svg('medium_white')
+		a.header__button(href="" target="_blank")
+			| Get in Touch
+	.header__burger.js-burger.for-mobile
+		+svg('menu')

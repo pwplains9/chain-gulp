@@ -1,0 +1,40 @@
+section.section.section--1
+	.section__container.section__container--info
+		.info
+			.info__block(data-aos="fade-left" data-aos-delay="100")
+				.info__block-title.title.title--md
+					| Developers have a good description
+				.info__block-description.text.text--md
+					| of the SDK API for developing their own projects
+				a.info__block-link.link.link--md(href="")
+					| Check It Out
+			.info__video(data-aos="fade-right" data-aos-delay="100")
+				.info__container
+					video.video-js(
+						controls
+						data-name="Name"
+						data-setup="{ \"techOrder\": [\"youtube\"], \"sources\": [{ \"type\": \"video/youtube\", \"src\": \"https://youtu.be/FMdk5Iq2rWI\"}] }"
+					)
+					.info__intro
+						.info__intro-logo.title.title--md.title--white
+							| Meet
+							span.line
+								span.texts
+									| Globo
+						.info__intro-text.text.text--md.text--white
+							| A blockchain of the 5.0 generation, which has all the necessary  fundamental and sufficient conditions to ensure the work of the fourth generation of blockchain
+						.info__intro-play
+							+svg('play')
+				.info__video-blocks
+					.info__video-block.info__video-block--1
+						span
+							+svg('bolt')
+						| Fast
+					.info__video-block.info__video-block--2
+						span
+							+svg('card')
+						| Cheap
+					.info__video-block.info__video-block--3
+						span
+							+svg('shield')
+						| Safe

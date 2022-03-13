@@ -1,0 +1,185 @@
+.header {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 5;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: vc(24) 0;
+	width: vc(1319);
+
+	&__left {
+		display: flex;
+		align-items: center;
+	}
+
+	&__logo {
+		@include hoverOpacity;
+
+		display: block;
+		margin-right: vc(48);
+		width: vc(190);
+		height: vc(40);
+		color: $color-logo;
+
+		@include mobile {
+			width: vc(154);
+			height: vc(32);
+		}
+	}
+
+	&__nav {
+		display: flex;
+		align-items: center;
+
+		@include desktop {
+			li {
+				margin-right: vc(48);
+			}
+		}
+
+		@include mobile {
+			flex-flow: column;
+
+			li {
+				margin-bottom: vc(20);
+			}
+		}
+	}
+
+	&__link {
+		@include hoverOpacity;
+
+		font-family: $font-Montserrat;
+		font-weight: 600;
+		font-size: vc(16);
+		line-height: vc(16);
+		color: $color-text;
+	}
+
+	&__right {
+		display: flex;
+		align-items: center;
+
+		@include mobile {
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: vc(80);
+			flex-flow: column;
+			padding: vc(32) 0;
+			background: $color-white;
+			transform: translateX(-100%);
+			transition: all 0.2s linear;
+
+			.is-menu-opened & {
+				transform: translateX(0);
+			}
+		}
+	}
+
+	&__switch {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+		border: 2px solid $color-white;
+		border-radius: 50%;
+		width: vc(48);
+		height: vc(48);
+		color: $color-white;
+		transition: all 0.5s linear;
+		cursor: pointer;
+
+		svg {
+			position: absolute;
+			width: vc(24);
+			height: vc(24);
+
+			&:nth-child(2) {
+				opacity: 0;
+				transition: all 0.5s linear;
+			}
+		}
+
+		@include mobile {
+			margin-bottom: vc(20);
+			border-color: $color-gray;
+			color: $color-gray;
+		}
+	}
+
+	&__socials {
+		display: flex;
+		align-items: center;
+
+		@include mobile {
+			margin-bottom: vc(30);
+		}
+	}
+
+	&__social {
+		@include hoverOpacity;
+
+		display: block;
+		margin-left: vc(48);
+		width: vc(24);
+		height: vc(24);
+		color: $color-white;
+
+		@include desktop {
+			&:nth-child(1) {
+				margin-left: 36px;
+			}
+		}
+
+		@include mobile {
+			margin: 0 vc(20);
+			width: vc(35);
+			height: vc(35);
+			color: $color-gray;
+		}
+	}
+
+	&__button {
+		flex-shrink: 0;
+		margin-left: vc(36);
+		border-radius: 4px;
+		padding: 0 vc(24);
+		font-family: $font-Montserrat;
+		font-weight: 600;
+		font-size: vc(16);
+		line-height: vc(48);
+		color: $color-white;
+		background: $color-theme;
+
+		@include mobile {
+			margin-left: 0;
+		}
+	}
+
+	@include mobile {
+		padding: vc(16) vc(32);
+		width: 100%;
+		background: $color-white;
+		transition: all 0.2s linear;
+
+		&__burger {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-right: vc(-12);
+			width: vc(48);
+			height: vc(48);
+			color: $color-gray;
+
+			svg {
+				width: vc(24);
+				height: vc(24);
+			}
+		}
+	}
+}

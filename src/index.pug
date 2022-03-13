@@ -1,0 +1,16 @@
+extends pug/base
+
+prepend vars
+	- title = 'Globochain'
+	- description = 'Description'
+	- image = '/images/share/' // url картинки для шера
+
+append vars
+
+
+block content
+	include pug/components/header
+
+	include pug/pages/home
+
+	include pug/components/footer

@@ -1,0 +1,168 @@
+.advantage {
+	padding-bottom: vc(72);
+
+	&__item {
+		display: flex;
+
+		&--1 {
+			margin-bottom: vc(71);
+			border-bottom: 1px solid rgba(20, 16, 41, 0.8);
+			padding-bottom: vc(71);
+
+			@include mobile {
+				margin-bottom: 0;
+				border-bottom: 1px solid rgba(20, 16, 41, 0.8);
+				padding-bottom: vc(31);
+			}
+		}
+
+		&--2 {
+
+		}
+
+		@include mobile {
+			flex-flow: column;
+		}
+	}
+
+	&__image {
+		flex-shrink: 0;
+		border-radius: vc(12);
+		width: vc(760);
+		overflow: hidden;
+
+		&--left {
+			margin-right: vc(136);
+		}
+
+		&--right {
+			margin-left: vc(136);
+		}
+
+		img {
+
+		}
+
+		@include mobile {
+			order: 1;
+			margin: 0;
+			border-radius: 0 0 12px 12px;
+			width: 100%;
+		}
+	}
+
+	&__content {
+		@include mobile {
+			order: 2;
+			padding: 0 vc(32);
+		}
+	}
+
+	&__subtitle {
+		margin-top: vc(35);
+		margin-bottom: vc(25);
+		font-family: $font-Montserrat;
+		font-weight: 700;
+		font-size: vc(14);
+		line-height: vc(14);
+		color: $color-surface2;
+		text-transform: uppercase;
+
+		@include desktop {
+			&--2 {
+				margin-top: vc(22);
+			}
+		}
+
+		@include mobile {
+			margin-bottom: vc(7);
+		}
+	}
+
+	&__title {
+		margin-bottom: vc(42);
+
+		@include mobile {
+			margin-bottom: vc(21);
+		}
+	}
+
+	&__description {
+		margin-bottom: vc(32);
+
+		@include mobile {
+			margin-bottom: vc(16);
+
+			&--2 {
+				margin-bottom: vc(31);
+			}
+		}
+	}
+
+	&__link {
+
+	}
+
+	&__numbers {
+		display: flex;
+	}
+
+	&__subitem {
+		border-radius: 12px;
+		padding: vc(19);
+		width: vc(200);
+		height: vc(104);
+
+		&--1 {
+			color: $color-surface;
+			margin-right: vc(24);
+			background-color: rgba(122, 182, 204, 0.24);
+
+			.advantage__number {
+				color: $color-surface;
+			}
+
+			@include mobile {
+				margin-right: vc(16);
+			}
+		}
+
+		&--2 {
+			color: $color-surface2;
+			background-color: rgba(122, 147, 204, 0.24);
+
+			.advantage__number {
+				color: $color-surface2;
+			}
+		}
+
+		@include mobile {
+			padding: vc(14);
+		}
+	}
+
+	&__number {
+		@include mobile {
+			margin-bottom: vc(7);
+			font-size: vc(36);
+			line-height: vc(39);
+		}
+	}
+
+	&__text {
+		font-family: $font-Montserrat;
+		font-weight: 600;
+		font-size: vc(14);
+		line-height: vc(14);
+
+		@include mobile {
+			padding-right: vc(17);
+			font-size: vc(13);
+			line-height: vc(13);
+		}
+	}
+
+	@include mobile {
+		padding-bottom: vc(32);
+	}
+}

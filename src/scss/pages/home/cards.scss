@@ -1,0 +1,66 @@
+.cards {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: vc(72);
+
+	&__item {
+		margin-bottom: vc(22);
+		border-radius: 12px;
+		padding: vc(4) vc(4) vc(26);
+		width: vc(648);
+		box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px 0 rgba(20, 16, 41, 0.12);
+		background-color: $color-white;
+
+		@include mobile {
+			margin-bottom: vc(12);
+			padding: 0 vc(4);
+			width: 100%;
+		}
+	}
+
+	&__image {
+		margin: 0 0 vc(28);
+		border-radius: 12px;
+		overflow: hidden;
+		width: vc(640);
+		height: vc(320);
+		object-fit: contain;
+
+		@include mobile {
+			border-radius: 8px;
+			width: vc(336);
+			height: vc(168);
+		}
+	}
+
+	&__footer {
+		@include desktop {
+			display: flex;
+			justify-content: space-between;
+			padding: 0 vc(28);
+		}
+
+		@include mobile {
+			padding: 0 vc(20) vc(26);
+		}
+	}
+
+	&__title {
+		@include mobile {
+			margin-bottom: vc(13);
+		}
+	}
+
+	&__text {
+		@include desktop {
+			width: vc(392);
+			line-height: vc(23);
+		}
+	}
+
+	@include mobile {
+		margin-top: vc(44);
+		padding: 0 vc(8);
+	}
+}
