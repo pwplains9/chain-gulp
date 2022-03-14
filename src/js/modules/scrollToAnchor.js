@@ -15,7 +15,7 @@ const init = () => {
 
 		header.closeMenu().then(() => {
 			$('.js-burger').removeClass('is-active');
-			helpers.scrollTo($(id), speed, offset);
+			helpers.scrollTo($(id), speed, 0);
 		});
 	});
 };
