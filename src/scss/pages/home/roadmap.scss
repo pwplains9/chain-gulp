@@ -67,7 +67,7 @@
 			@include desktop {
 				&:hover {
 					border-color: $color-surface6;
-					background: rgba($color-surface6, 0.24);
+					background: rgba($color-surface6, 0.24) !important;
 				}
 			}
 		}
@@ -85,7 +85,7 @@
 			@include desktop {
 				&:hover {
 					border-color: $color-surface11;
-					background: rgba($color-surface11, 0.24);
+					background: rgba($color-surface11, 0.24) !important;
 				}
 			}
 		}
@@ -103,7 +103,7 @@
 			@include desktop {
 				&:hover {
 					border-color: $color-surface;
-					background: rgba($color-surface, 0.24);
+					background: rgba($color-surface, 0.24) !important;
 				}
 			}
 		}
@@ -121,7 +121,7 @@
 			@include desktop {
 				&:hover {
 					border-color: $color-surface2;
-					background: rgba($color-surface2, 0.24);
+					background: rgba($color-surface2, 0.24) !important;
 				}
 			}
 		}
@@ -139,7 +139,7 @@
 			@include desktop {
 				&:hover {
 					border-color: $color-surface12;
-					background: rgba($color-surface12, 0.24);
+					background: rgba($color-surface12, 0.24) !important;
 				}
 			}
 		}
@@ -157,7 +157,7 @@
 			@include desktop {
 				&:hover {
 					border-color: $color-surface13;
-					background: rgba($color-surface13, 0.24);
+					background: rgba($color-surface13, 0.24) !important;
 				}
 			}
 		}
@@ -175,7 +175,7 @@
 			@include desktop {
 				&:hover {
 					border-color: $color-surface3;
-					background: rgba($color-surface3, 0.24);
+					background: rgba($color-surface3, 0.24) !important ;
 				}
 			}
 		}
@@ -193,7 +193,7 @@
 			@include desktop {
 				&:hover {
 					border-color: $color-surface7;
-					background: rgba($color-surface7, 0.24);
+					background: rgba($color-surface7, 0.24) !important;
 				}
 			}
 		}
@@ -211,7 +211,7 @@
 			@include desktop {
 				&:hover {
 					border-color: $color-surface14;
-					background: rgba($color-surface14, 0.24);
+					background: rgba($color-surface14, 0.24) !important;
 				}
 			}
 		}
