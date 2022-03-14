@@ -15,6 +15,10 @@
 		background: url("../images/png@2x/noise@2x.png") center center no-repeat;
 		background-size: contain;
 
+		@include desktop-xl {
+			background-size: cover;
+		}
+
 		@include mobile {
 			width: vc(1680);
 			left: -138%;
