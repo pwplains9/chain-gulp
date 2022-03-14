@@ -29,19 +29,21 @@
 	&__item {
 		position: relative;
 		margin-bottom: vc(24);
+		border: 4px solid transparent;
 		border-radius: 12px;
-		padding: vc(27) vc(24);
+		padding: vc(27) vc(20);
 		width: vc(312);
 		height: vc(312);
 		box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px 0 rgba(20, 16, 41, 0.12);
 		background-color: $color-white;
+		transition: all 0.5s linear;
 
 		&::before {
 			content: "";
 			position: absolute;
 			left: 0;
 			right: 0;
-			top: 0;
+			top: vc(-4);
 			margin: 0 auto;
 			width: vc(264);
 			height: vc(4);
@@ -61,6 +63,13 @@
 			.roadmap__subtitle {
 				color: $color-surface6 !important;
 			}
+
+			@include desktop {
+				&:hover {
+					border-color: $color-surface6;
+					background: rgba($color-surface6, 0.24);
+				}
+			}
 		}
 
 		&--2 {
@@ -71,6 +80,13 @@
 			.roadmap__year,
 			.roadmap__subtitle {
 				color: $color-surface11 !important;
+			}
+
+			@include desktop {
+				&:hover {
+					border-color: $color-surface11;
+					background: rgba($color-surface11, 0.24);
+				}
 			}
 		}
 
@@ -83,6 +99,13 @@
 			.roadmap__subtitle {
 				color: $color-surface !important;
 			}
+
+			@include desktop {
+				&:hover {
+					border-color: $color-surface;
+					background: rgba($color-surface, 0.24);
+				}
+			}
 		}
 
 		&--4 {
@@ -93,6 +116,13 @@
 			.roadmap__year,
 			.roadmap__subtitle {
 				color: $color-surface2 !important;
+			}
+
+			@include desktop {
+				&:hover {
+					border-color: $color-surface2;
+					background: rgba($color-surface2, 0.24);
+				}
 			}
 		}
 
@@ -105,6 +135,13 @@
 			.roadmap__subtitle {
 				color: $color-surface12 !important;
 			}
+
+			@include desktop {
+				&:hover {
+					border-color: $color-surface12;
+					background: rgba($color-surface12, 0.24);
+				}
+			}
 		}
 
 		&--6 {
@@ -115,6 +152,13 @@
 			.roadmap__year,
 			.roadmap__subtitle {
 				color: $color-surface13 !important;
+			}
+
+			@include desktop {
+				&:hover {
+					border-color: $color-surface13;
+					background: rgba($color-surface13, 0.24);
+				}
 			}
 		}
 
@@ -127,6 +171,13 @@
 			.roadmap__subtitle {
 				color: $color-surface3 !important;
 			}
+
+			@include desktop {
+				&:hover {
+					border-color: $color-surface3;
+					background: rgba($color-surface3, 0.24);
+				}
+			}
 		}
 
 		&--8 {
@@ -138,6 +189,13 @@
 			.roadmap__subtitle {
 				color: $color-surface7 !important;
 			}
+
+			@include desktop {
+				&:hover {
+					border-color: $color-surface7;
+					background: rgba($color-surface7, 0.24);
+				}
+			}
 		}
 
 		&--9 {
@@ -148,6 +206,13 @@
 			.roadmap__year,
 			.roadmap__subtitle {
 				color: $color-surface14 !important;
+			}
+
+			@include desktop {
+				&:hover {
+					border-color: $color-surface14;
+					background: rgba($color-surface14, 0.24);
+				}
 			}
 		}
 

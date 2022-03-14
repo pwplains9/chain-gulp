@@ -14,7 +14,7 @@
 
 		@include mobile {
 			margin-bottom: vc(12);
-			padding: 0 vc(4);
+			padding: vc(4) vc(4) 0;
 			width: 100%;
 		}
 	}
