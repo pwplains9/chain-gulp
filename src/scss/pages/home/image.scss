@@ -3,9 +3,15 @@
 	width: vc(872);
 	height: vc(232);
 
+	img {
+		&:nth-child(2) {
+			display: none;
+		}
+	}
+
 	@include mobile {
 		margin: vc(57) auto vc(51);
-		width: vc(275);
+		width: vc(294);
 		height: vc(147);
 	}
 }

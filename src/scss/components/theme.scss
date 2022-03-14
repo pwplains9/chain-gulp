@@ -103,6 +103,23 @@
 		background: $color-footer-m;
 	}
 
+	.image {
+		img {
+			&:nth-child(1) {
+				display: none;
+			}
+
+			&:nth-child(2) {
+				display: block;
+			}
+		}
+	}
+
+	.chart__square--1 {
+		background: url("../images/png@2x/chart_dark@3x.png") center center no-repeat;
+		background-size: contain;
+	}
+
 	@include  mobile {
 		.advantage__item--1 {
 			border-bottom-color: $color-bg;
