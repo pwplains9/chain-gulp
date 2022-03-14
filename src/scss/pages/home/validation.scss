@@ -16,6 +16,7 @@
 		background-size: contain;
 
 		@include mobile {
+			width: vc(1680);
 			left: -138%;
 		}
 	}
