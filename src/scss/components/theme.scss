@@ -120,6 +120,10 @@
 		background-size: contain;
 	}
 
+	.footer__copy {
+		color: $color-white;
+	}
+
 	@include  mobile {
 		.advantage__item--1 {
 			border-bottom-color: $color-bg;

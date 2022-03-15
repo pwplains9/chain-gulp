@@ -28,7 +28,7 @@
 
 	&__right {
 		display: flex;
-		padding-top: vc(188);
+		padding-top: vc(116);
 		width: vc(313);
 
 		@include mobile {
@@ -75,33 +75,48 @@
 		height: vc(48);
 
 		&--1 {
-			background: url("../images/png@2x/chart_light@3x.png") center center no-repeat;
-			background-size: contain;
+			background-color: #7ab6cc;
 		}
 
 		&--2 {
-			background: $color-surface3;
+			background-color: #cc7ab1;
 		}
 
 		&--3 {
-			background: $color-surface9;
+			background-color: #6eb891;
 		}
 
 		&--4 {
-			background: $color-surface8;
+			background-color: #ab6eb8;
 		}
 
 		&--5 {
-			background: $color-surface;
+			background-color: #cc7a88;
 		}
 
 		&--6 {
-			background: $color-surface10;
+			background-color: #e0c387;
+		}
+
+		&--7 {
+			background-color: #907acc;
+		}
+
+		&--8 {
+			background-color: #e0a887;
+		}
+
+		&--9 {
+			background-color: #6eb7b8;
+		}
+
+		&--10 {
+			background-color: #7a93cc;
 		}
 	}
 
 	&__subtitle {
-		padding: vc(6) 0 vc(5);
+		padding: vc(3) 0 vc(5);
 		font-family: $font-Montserrat;
 		font-weight: 500;
 		font-size: vc(13);

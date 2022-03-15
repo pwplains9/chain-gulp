@@ -1,5 +1,7 @@
 .footer {
+	font-family: $font-Montserrat;
 	background: $color-footer;
+	font-size: vc(14);
 
 	&__container {
 		display: flex;
@@ -11,6 +13,11 @@
 		@include mobile {
 			padding: vc(32);
 			width: 100%;
+		}
+
+		@include mobile {
+			flex-flow: column;
+			align-items: center;
 		}
 	}
 
@@ -31,6 +38,10 @@
 	&__socials {
 		display: flex;
 		align-items: center;
+
+		@include mobile {
+			margin: vc(20) 0;
+		}
 	}
 
 	&__social {
@@ -48,6 +59,18 @@
 			&:first-child {
 				margin-left: 0;
 			}
+		}
+	}
+
+	&__copy {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		a {
+			@include hoverOpacity;
+
+			padding-left: vc(5);
 		}
 	}
 }

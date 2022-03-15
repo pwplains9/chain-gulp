@@ -1,26 +1,26 @@
-
 <svg width="424" height="424" viewBox="0 0 424 424" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-	<defs>
-		<rect id="mbelrd9gwa" x="0" y="0" width="424" height="424" rx="212"/>
-		<rect id="34t6rmvdfc" x="0" y="0" width="424" height="424" rx="212"/>
-	</defs>
-	<g fill="none" fill-rule="evenodd">
-		<mask id="tctqqhadub" fill="#fff">
-			<use xlink:href="#mbelrd9gwa"/>
-		</mask>
-		<use fill="#EBEFF5" xlink:href="#mbelrd9gwa"/>
-		<g mask="url(#tctqqhadub)" stroke="#383A3D" stroke-linecap="square">
-			<path d="m231.5-48.5 396 301M219.5-42.5l396 301M207.5-36.5l396 301M195.5-30.5l396 301M183.5-24.5l396 301M171.5-18.5l396 301M159.5-12.5l396 301M147.5-6.5l396 301M135.5-.5l396 301M123.5 5.5l396 301M111.5 11.5l396 301M99.5 17.5l396 301M87.5 23.5l396 301M75.5 29.5l396 301M63.5 35.5l396 301M51.5 41.5l396 301M39.5 47.5l396 301M27.5 53.5l396 301M15.5 59.5l396 301M3.5 65.5l396 301M-8.5 71.5l396 301M-20.5 77.5l396 301M-32.5 83.5l396 301M-44.5 89.5l396 301"/>
-		</g>
-		<path fill="#383A3D" mask="url(#tctqqhadub)" d="M0 0h212v212H0z"/>
-		<path fill="#7AB6CC" mask="url(#tctqqhadub)" transform="matrix(1 0 0 -1 0 555.494)" d="M212 131.494H0V424l212-80.506z"/>
-		<path fill="#907ACC" mask="url(#tctqqhadub)" transform="matrix(1 0 0 -1 0 636)" d="M212 212h212L212 424z"/>
-		<path fill="#87E0C2" mask="url(#tctqqhadub)" transform="matrix(1 0 0 -1 0 636)" d="M212 212H61.11L212 424z"/>
-		<path fill="#E0C387" mask="url(#tctqqhadub)" transform="matrix(1 0 0 -1 0 636)" d="M212 212h61.191L212 424z"/>
-		<mask id="lzy2vr06pd" fill="#fff">
-			<use xlink:href="#34t6rmvdfc"/>
-		</mask>
-		<rect stroke="#383A3D" x=".5" y=".5" width="423" height="423" rx="211.5"/>
-		<path stroke="#383A3D" mask="url(#lzy2vr06pd)" d="M13.5 137.5 212 212M89.5 384.5 212 212M212 0v424M270.5 415.5 212 212M361.5 362.5 212 212"/>
-	</g>
+    <defs>
+        <rect id="bqpabxrwpa" x="0" y="0" width="424" height="424" rx="212"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <mask id="dqpph2gx0b" fill="#fff">
+                <use xlink:href="#bqpabxrwpa"/>
+            </mask>
+            <use fill="#7AB6CC" xlink:href="#bqpabxrwpa"/>
+            <path fill="#CC7A88" mask="url(#dqpph2gx0b)" transform="matrix(1 0 0 -1 0 636)" d="M212 212H11.293L212 424z"/>
+            <path fill="#7A93CC" mask="url(#dqpph2gx0b)" transform="matrix(1 0 0 -1 0 212)" d="M0 0v212h199.353L212 0z"/>
+            <path fill="#6EB7B8" mask="url(#dqpph2gx0b)" transform="matrix(1 0 0 -1 0 212)" d="M0 0v212h171L212 0z"/>
+            <path fill="#E0A887" mask="url(#dqpph2gx0b)" transform="matrix(1 0 0 -1 0 212)" d="M0 0v212h94.086L212 0z"/>
+            <path fill="#907ACC" mask="url(#dqpph2gx0b)" transform="matrix(1 0 0 -1 0 225.877)" d="M0 13.877V212L212 13.877z"/>
+            <path fill="#E0C387" mask="url(#dqpph2gx0b)" transform="matrix(1 0 0 -1 0 536.452)" d="M11.293 112.452H0V424l212-99.548z"/>
+            <path fill="#AB6EB8" mask="url(#dqpph2gx0b)" transform="matrix(1 0 0 -1 0 636)" d="M212 212H76.906L212 424z"/>
+            <path fill="#CC7AB1" mask="url(#dqpph2gx0b)" transform="matrix(1 0 0 -1 0 636)" d="M212 212h83.964L212 424z"/>
+            <path fill="#6EB891" mask="url(#dqpph2gx0b)" transform="matrix(1 0 0 -1 0 636)" d="M212 212h-55.338L212 424z"/>
+        </g>
+        <g stroke="#383A3D">
+            <path d="m289.5 408.5-78-196M211.5 423.5v-211M158.5 416.5l53-204M98.5 390.5l113-178M66.5 365.5l145-153M20.5 122.5l191 90M57.5 67.5l154 145M109.5 27.5l102 185M172.5 4.5l39 208M199.5.5l12 212"/>
+            <rect x=".5" y=".5" width="423" height="423" rx="211.5"/>
+        </g>
+    </g>
 </svg>

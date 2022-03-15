@@ -2,7 +2,7 @@ import Vivus from 'vivus';
 import vars from '../helpers';
 
 function init() {
-	let $graph = vars.$body.find('.roadmap__path svg');
+	let $graph = vars.$body.find('.chart__center svg');
 
 	if (vars.isIE()) {
 		return;
