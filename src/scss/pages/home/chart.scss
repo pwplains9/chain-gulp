@@ -19,6 +19,12 @@
 		width: vc(424);
 		height: vc(424);
 
+		svg {
+			&:nth-child(2) {
+				display: none;
+			}
+		}
+
 		@include mobile {
 			margin-top: vc(32);
 			width: vc(296);
@@ -75,43 +81,44 @@
 		height: vc(48);
 
 		&--1 {
-			background-color: #7ab6cc;
+			background-color: #0bf;
 		}
 
 		&--2 {
-			background-color: #cc7ab1;
+			background-color: #cc2996;
 		}
 
 		&--3 {
-			background-color: #6eb891;
+			background-color: #16b862;
 		}
 
 		&--4 {
-			background-color: #ab6eb8;
+			background-color: #5d2de1;
 		}
 
 		&--5 {
-			background-color: #cc7a88;
+			background-color: #f54562;
 		}
 
 		&--6 {
-			background-color: #e0c387;
+			background-color: #ffab00;
 		}
 
 		&--7 {
-			background-color: #907acc;
+			background-color: #5d2de1;
 		}
 
 		&--8 {
-			background-color: #e0a887;
+			border: solid 4px #ff5e00;
+			background-color: transparent;
 		}
 
 		&--9 {
-			background-color: #6eb7b8;
+			background-color: #00b8b9;
 		}
 
 		&--10 {
-			background-color: #7a93cc;
+			background-color: #4579f5;
 		}
 	}
 

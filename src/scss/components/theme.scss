@@ -115,9 +115,16 @@
 		}
 	}
 
-	.chart__square--1 {
-		background: url("../images/png@2x/chart_dark@3x.png") center center no-repeat;
-		background-size: contain;
+	.chart__center {
+		svg {
+			&:nth-child(1) {
+				display: none;
+			}
+
+			&:nth-child(2) {
+				display: block;
+			}
+		}
 	}
 
 	.footer__copy {

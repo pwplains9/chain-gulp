@@ -24,7 +24,7 @@
 		}
 
 		@include mobile {
-			padding: 0 vc(32);
+			padding: vc(32) vc(32) 0;
 		}
 	}
 

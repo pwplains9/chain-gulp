@@ -1,13 +1,13 @@
 
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="424px" height="424px" viewBox="0 0 424 424" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-	<title>chart_dark</title>
+	<title>chart_light</title>
 	<defs>
 		<rect id="path-1" x="0" y="0" width="424" height="424" rx="212"></rect>
 	</defs>
 	<g id="02_assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-		<g id="00_desktop" transform="translate(-2659.000000, -8516.000000)">
-			<g id="chart_dark" transform="translate(2659.000000, 8516.000000)">
+		<g id="00_desktop" transform="translate(-2203.000000, -8516.000000)">
+			<g id="chart_light" transform="translate(2203.000000, 8516.000000)">
 				<g id="Group-4">
 					<mask id="mask-2" fill="white">
 						<use xlink:href="#path-1"></use>
@@ -16,14 +16,14 @@
 					<polygon id="Rectangle" fill="#F54562" mask="url(#mask-2)" transform="translate(111.646423, 318.000000) scale(1, -1) translate(-111.646423, -318.000000) " points="212 212 11.2928467 212 212 424"></polygon>
 					<polygon id="Rectangle" fill="#4579F5" mask="url(#mask-2)" transform="translate(106.000000, 106.000000) scale(1, -1) translate(-106.000000, -106.000000) " points="1.99694428e-13 7.89557552e-12 3.7658765e-13 212 199.352966 212 212 3.63797881e-12"></polygon>
 					<polygon id="Rectangle" fill="#00B8B9" mask="url(#mask-2)" transform="translate(106.000000, 106.000000) scale(1, -1) translate(-106.000000, -106.000000) " points="1.99694428e-13 7.89557552e-12 3.7658765e-13 212 170.999054 212 212 3.63797881e-12"></polygon>
-					<polygon id="Rectangle" fill="#202036" mask="url(#mask-2)" transform="translate(106.000000, 106.000000) scale(1, -1) translate(-106.000000, -106.000000) " points="1.99694428e-13 7.89557552e-12 3.7658765e-13 212 94.0862427 212 212 3.63797881e-12"></polygon>
+					<polygon id="Rectangle" fill="#FFFFFF" mask="url(#mask-2)" transform="translate(106.000000, 106.000000) scale(1, -1) translate(-106.000000, -106.000000) " points="1.99694428e-13 7.89557552e-12 3.7658765e-13 212 94.0862427 212 212 3.63797881e-12"></polygon>
 					<polygon id="Rectangle" fill="#5D2DE1" mask="url(#mask-2)" transform="translate(106.000000, 112.938338) scale(1, -1) translate(-106.000000, -112.938338) " points="0 13.8766766 0 212.000154 212 13.8766766"></polygon>
 					<polygon id="Rectangle" fill="#FFAB00" mask="url(#mask-2)" transform="translate(106.000000, 268.225792) scale(1, -1) translate(-106.000000, -268.225792) " points="11.2928467 112.451584 0 112.451584 0 424.000198 212 324.451584"></polygon>
 					<polygon id="Rectangle" fill="#5D2DE1" mask="url(#mask-2)" transform="translate(144.453049, 318.000000) scale(1, -1) translate(-144.453049, -318.000000) " points="212 212 76.9060974 212 212 424"></polygon>
 					<polygon id="Rectangle" fill="#CC2996" mask="url(#mask-2)" transform="translate(253.982178, 318.000000) scale(1, -1) translate(-253.982178, -318.000000) " points="212 212 295.964355 212 212 424"></polygon>
 					<polygon id="Rectangle" fill="#16B862" mask="url(#mask-2)" transform="translate(184.330944, 318.000000) scale(1, -1) translate(-184.330944, -318.000000) " points="212 212 156.661888 212 212 424"></polygon>
 				</g>
-				<g id="Group-5" stroke="#202036" stroke-width="4">
+				<g id="Group-5" stroke="#FFFFFF" stroke-width="4">
 					<line x1="289.5" y1="408.5" x2="211.5" y2="212.5" id="Path-3"></line>
 					<line x1="211.5" y1="423.5" x2="211.5" y2="212.5" id="Path-3"></line>
 					<line x1="158.5" y1="416.5" x2="211.5" y2="212.5" id="Path-3"></line>
