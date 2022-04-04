@@ -248,6 +248,10 @@
 		}
 	}
 
+	@include desktop {
+		margin-bottom: vc(230);
+	}
+
 	@include mobile {
 		padding-top: 0;
 	}
